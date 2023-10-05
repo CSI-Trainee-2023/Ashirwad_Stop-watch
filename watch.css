@@ -111,7 +111,21 @@ body {
     margin-left: 25px;
     
 }
-
+.lap-clear-button{
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    bottom: 35px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 130px;
+    padding: 10px 0;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid white;
+    cursor: pointer;
+    
+}
 .hidden{
     visibility: hidden;
 }
