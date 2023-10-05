@@ -16,8 +16,35 @@
                    <span class="text msec">&nbsp;0</span>
                 </div>
             </div>
+            <div class="button-wrapper">
+                <button class="button reset hidden">Reset</button>
+                <button class="button start">Start</button>
+                <button class="button lap hidden">Lap</button>
+            </div>
         </div>
     </div>
+    <script>
+        const startButton = document.getElementsByClassName("start")[0];
+        const lapButton = document.getElementsByClassName("lap")[0];
+        const resetButton = document.getElementsByClassName("reset")[0];
+
+        let isStart = false;
+        const start = () =>{
+            if(!isStart ) {
+                startButton.innerHTML = 'Pause';
+               
+                isStart = true;
+            
+            } else{
+                startButton.innerHTML = 'start';
+                
+                isStart = false;  
+              
+            }
+         
+        }
+        startButton.addEventListener("click",  start);
+    </script>
    
 </body>
 </html>
